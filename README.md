@@ -7,4 +7,5 @@ for rBTC, allowing users to trade BTC for rBTC in either direction.
 
 ## Links
 
-* [Our Fork of Bisq With Support for rBTC](https://github.com/harrigan/bisq/tree/rbtc)
+* [Our Fork of Bisq With Support for rBTC](https://github.com/harrigan/bisq)
+* [Our Pull Request Adding Support for rBTC to Bisq](https://github.com/bisq-network/bisq/pull/5611)
