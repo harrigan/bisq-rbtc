@@ -4,13 +4,14 @@ PREVIEW = open -a Preview
 FSWATCH = fswatch
 REFRESH = osascript -e 'tell application \"Preview\" to activate'
 
-BASENAME = main
+BASENAME = presentation
 TEXFILES = $(BASENAME).tex
 STYFILES =
 IMGFILES = \
   img/avatars/harrigan.png \
   img/avatars/hash-guesser.png \
-  img/avatars/tomlloyd92.png
+  img/avatars/tomlloyd92.png \
+  img/bisq-support-for-rbtc.png
 BIBFILES =
 MISCFILES =
 
@@ -19,7 +20,7 @@ OUTPUTFILE = $(BASENAME).pdf
 
 .PHONY: all check clean open watch
 
-all: $(BASENAME).pdf
+all: $(OUTPUTFILE)
 
 $(OUTPUTFILE): $(INPUTFILES)
 	$(LATEXMK) -pdf -bibtex -use-make $<

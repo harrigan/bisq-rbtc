@@ -21,3 +21,4 @@
 **/*.vrb
 **/*.xml
 **/*.xwm
+!presentation.pdf

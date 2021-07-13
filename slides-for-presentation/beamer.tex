@@ -1,0 +1,63 @@
+\usepackage{amssymb}
+\usepackage{bold-extra}
+\usepackage{booktabs}
+\usepackage{ccicons}
+\usepackage{fancybox}
+\usepackage{mathabx}
+\usepackage{multicol}
+\usepackage[normalem]{ulem}
+\usepackage[round]{natbib}
+\usepackage{pigpen}
+\usepackage{siunitx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{xparse}
+\usepackage{wasysym}
+\usepackage{xcolor}
+\usepackage{xparse}
+
+\definecolor{myred}{HTML}{E41A1C}
+\definecolor{myblue}{HTML}{377EB8}
+\definecolor{mygreen}{HTML}{4DAF4A}
+\definecolor{mypurple}{HTML}{984EA3}
+\definecolor{myorange}{HTML}{FF7F00}
+\definecolor{mybrown}{HTML}{A65628}
+\definecolor{mypink}{HTML}{F781BF}
+\definecolor{myyellow}{HTML}{FFFF33}
+
+\usetheme{metropolis}
+\setbeamercolor{alerted text}{fg=red, bg=white}
+\setbeamercolor{example text}{fg=green, bg=white}
+\setbeamercovered{transparent}
+
+\definecolor{lightgray}{RGB}{153, 153, 153}
+
+\newcommand{\mycitep}[1]{
+  {\small\textcolor{lightgray}{\citep{#1}}}%
+}
+
+\setbeamercovered{transparent}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setlength{\belowcaptionskip}{-10pt}
+
+\newcommand\blfootnote[1]{
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}
+  \addtocounter{footnote}{-1}
+  \endgroup
+}
+
+% https://tex.stackexchange.com/a/356901/76669
+\let\oldquote\quote
+\let\endoldquote\endquote
+\RenewDocumentEnvironment{quote}{om}
+  {\oldquote}
+  {\par\nobreak\smallskip
+   \hfill(#2\IfValueT{#1}{~---~#1})\endoldquote 
+   \addvspace{\smallskipamount}}
+
+\newcommand{\mylogo}[1]{
+  \setlength{\TPHorizModule}{1pt}
+  \setlength{\TPVertModule}{1pt}
+  \begin{textblock}{1}(250,215)
+    #1
+  \end{textblock}}
