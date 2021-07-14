@@ -19,7 +19,7 @@ OUTPUTFILE = $(BASENAME).pdf
 
 .PHONY: all check clean open watch
 
-all: $(BASENAME).pdf
+all: $(OUTPUTFILE)
 
 $(OUTPUTFILE): $(INPUTFILES)
 	$(LATEXMK) -pdf -bibtex -use-make $<
