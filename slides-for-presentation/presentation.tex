@@ -36,8 +36,8 @@
 
 \frame{\frametitle{Bisq and the RSK Sidechain}
   \begin{itemize}
-    \item Alice now use Bisq to trade rBTC for BTC.
-    \item Similarly Bob can now use Bisq to trade BTC for rBTC.
+    \item Alice can use Bisq to trade rBTC for BTC.
+    \item Similarly, Bob can use Bisq to trade BTC for rBTC.
     \item Our pull request to the Bisq project was merged on 13th
       July.\footnote{\url{https://github.com/bisq-network/bisq/pull/5611}}
   \end{itemize}
@@ -148,13 +148,13 @@
 \frame{\frametitle{The Cost of Liquidity}
   Additionally,
   \begin{itemize}
-    \item The party selling rBTC also needs to mine an additional transaction to send the rBTC.
+    \item The party selling rBTC needs to mine an additional transaction to send the rBTC.
     \item The taker of a Bisq offer needs to mine three additional Bitcoin transactions to complete the trade.
   \end{itemize}
 
   \centering
 
-  \textbf{Also, a peg-out transaction currently pays approximately
+  \textbf{A peg-out transaction currently pays approximately
     twice the fee market rate!}  }
 
 \frame{\frametitle{The Cost of Liquidity}
@@ -167,9 +167,9 @@
 \frame{\frametitle{Bisq as an Alternative}
   Converting between BTC and rBTC using Bisq has a number of benefits:
   \begin{itemize}
-    \item While Bisq trades are somewhat more expensive than pegging
-      in, they can be much faster.
-    \item Pegging out is more expensive than pegging in, and for
+    \item While Bisq trades are somewhat more expensive than pegging-in,
+      they can be much faster.
+    \item Pegging-out is more expensive than pegging-in, and for
       conversions of less than \num{0.65} BTC, Bisq is a cheaper
       alternative.
   \end{itemize}
